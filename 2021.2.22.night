@@ -1,0 +1,39 @@
+practice 1
+# mod = Sketchup.active_model # Open model
+# ent = mod.entities # All entities in model
+#
+# #从[0,1,0]代表的轴线算起，开始绘制半径5单位的圆弧，从0度到90度
+# arc1 = ent.add_arc [0,0,0],[0,1,0],[0,0,1],5,0,90.degrees
+#
+# #从[0,1,0]代表的轴线算起，开始绘制半径10单位的圆弧，从0度到90度
+# arc2 = ent.add_arc [0,0,0],[0,1,0],[0,0,-1],10,0,90.degrees
+#
+# #从[0,1,0]代表的轴线起算，开始绘制半径15单位的圆弧，从0度到180度
+# arc3 = ent.add_arc [0,0,0],[0,1,0],[0,0,1],15,0,180.degrees
+#
+# #从[1,1,0]代表的轴线起算，开始绘制半径15单位的圆弧，从0度到90度
+# arc4 = ent.add_arc [0,0,0],[1,1,0],[0,0,-1],15,0,90.degrees
+#
+# #从[0,0,1]代表的轴线起算，开始绘制半径15单位的圆弧，从0度到90度
+# arc5 = ent.add_arc [0,0,0],[0,0,1],[1,0,0],15,0,90.degrees #
+
+practice2
+
+# Sketchup.os_language
+# Sketchup.app_name
+# Sketchup.version
+
+
+practice3
+
+# mod = Sketchup.active_model
+# ent = mod.entities
+# mat = mod.materials
+#
+# # 取得第一个物体的资讯，并显示它的物件形态
+# first_entity= ent[0]
+# UI.messagebox("档案中第一个物件是：" + first_entity.typename)
+#
+# #从Materials物件传回咨询
+# number_materials = mat.length
+# UI.messagebox("档案中使用了" + number_materials.to_s + " 样材料。")
